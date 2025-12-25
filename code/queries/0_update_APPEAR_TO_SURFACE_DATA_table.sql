@@ -1,0 +1,180 @@
+--Populate APPEAR_TO_SURFACE_DATA table with values
+/*
+--Add all colors related to OA_LOD3 to corresponding theme
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (0, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (1, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (2, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (3, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (4, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (5, 1);
+
+--Add colors for exsiting buildings to corresponding theme
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (6, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (7, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (8, 1);
+
+
+
+
+
+-- Add colors for planned buildings to corresponding theme
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (9, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (10, 1);
+
+INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+VALUES (11, 1);
+
+*/
+
+
+--AIrr textures BD:
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (18, 2); --SURFACE_DATA.ID (TEXTURE ID), APPEARANCE.ID (THEME ID for AIrr)
+
+--AIrr textures AD:
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (19, 3); --SURFACE_DATA.ID (TEXTURE ID), APPEARANCE.ID (THEME ID for AIrr)
+
+
+
+--Add colors for exsiting buildings to corresponding theme
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (12, 2);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (13, 2);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (8, 2);
+
+
+--Add colors for exsiting buildings to corresponding theme
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (12, 3);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (13, 3);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (8, 3);
+
+
+
+-- Add colors for planned buildings to corresponding theme
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (14, 2);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (15, 2);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (11, 2);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (14, 3);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (15, 3);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (11, 3);
+
+
+
+
+
+
+
+
+
+--Noise textures BD:
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (20, 4); --SURFACE_DATA.ID (TEXTURE ID), APPEARANCE.ID (THEME ID for AIrr)
+
+--Noise textures AD:
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (21, 5); --SURFACE_DATA.ID (TEXTURE ID), APPEARANCE.ID (THEME ID for AIrr)
+
+
+
+--Add colors for exsiting buildings to corresponding theme
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (12, 4);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (13, 4);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (8, 4);
+
+
+--Add colors for exsiting buildings to corresponding theme
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (12, 5);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (13, 5);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (8, 5);
+
+
+
+-- Add colors for planned buildings to corresponding theme
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (14, 4);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (15, 4);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (11, 4);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (14, 5);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (15, 5);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (11, 5);
+
+
+
+
+
+
+
+
+
+--SELECT *
+--FROM APPEAR_TO_SURFACE_DATA
+--ORDER BY APPEARANCE_ID, SURFACE_DATA_ID
+
+
+
+--SELECT *
+--FROM SURFACE_DATA
+--ORDER BY ID
+
+
+
