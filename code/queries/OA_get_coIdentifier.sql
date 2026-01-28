@@ -17,6 +17,8 @@ SELECT t1.geom_id, t1.value, t1.geom, t2.gmlid,
 	) AS t2
 )
 
+
+
 UPDATE sim_meta.geom_oa
 SET cityObjectIdentifier = temp_update_OA_table.gmlid
 FROM temp_update_OA_table

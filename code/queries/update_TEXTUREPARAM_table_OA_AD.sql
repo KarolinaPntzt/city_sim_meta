@@ -29,6 +29,8 @@ FROM textureparam_temp;
 DROP TABLE textureparam_temp;
 
 */
+
+
 /*
 
 --Populate TEXTUREPARAM table with values for
@@ -245,7 +247,8 @@ WHERE surface_geometry_id IN(
 	INNER JOIN sim_meta.geom_oa
 	ON CITYOBJECT.GMLID = sim_meta.geom_oa.cityObjectIdentifier
 	WHERE CITYOBJECT.OBJECTCLASS_ID = 38
-	AND SURFACE_GEOMETRY.GEOMETRY IS NULL AND sim_meta.geom_oa.Value IS NULL
+	AND SURFACE_GEOMETRY.GEOMETRY IS NULL 
+	AND sim_meta.geom_oa.Value IS NULL
 );
 
 --Windows whose OA is < 5:
@@ -376,7 +379,7 @@ INSERT INTO citydb.TEXTUREPARAM(
 VALUES(256661, 1, NULL, ST_GeomFromText('POLYGON((0.0 1.0, 1.0 1.0, 1.0 0.0, 0.0 0.0, 0.0 1.0))'), 20);
 */
 
-
+/*
 UPDATE TEXTUREPARAM
 SET TEXTURE_COORDINATES =
 ST_GeomFromText('POLYGON((0.0 0.0, 0.0 1.0, 1.0 1.0, 1.0 0.0, 0.0 0.0))')
@@ -387,6 +390,15 @@ WHERE TEXTURE_COORDINATES  IN
 	WHERE SURFACE_GEOMETRY_ID = 256661 AND
 	SURFACE_DATA_ID = 20
 );
+
+*/
+
+
+
+
+
+
+
 
 
 

@@ -159,17 +159,80 @@ VALUES (11, 1);
 --VALUES (11, 5);
 
 
+-----------------------------------------------
+-----------------------------------------------
+--Flood simulation output (water depth values):
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (90, 6);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (91, 6);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (92, 6);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (93, 6);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (94, 6);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (95, 6);
+
+-----------------BUILDINGS (EB)-----------------
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (12, 6); --RoofSurface
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (13, 6); --WallfSurface
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (8, 6); --GroundSurface
+-------------------------------------------
 
 
 
 
 
+-----------------------------------------------
+-----------------------------------------------
+--Wind simulation output (Lawson LDDC comfort criteria) BD:
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (96, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (97, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (98, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (99, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (100, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (101, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (102, 8);
+
+--Building appearance (BD scenario):
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (8, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (12, 8);
+
+--INSERT INTO citydb.APPEAR_TO_SURFACE_DATA
+--VALUES (13, 8);
 
 
---SELECT *
---FROM APPEAR_TO_SURFACE_DATA
---ORDER BY APPEARANCE_ID, SURFACE_DATA_ID
-
+SELECT DISTINCT SURFACE_DATA_ID
+FROM APPEAR_TO_SURFACE_DATA
+ORDER BY APPEARANCE_ID, SURFACE_DATA_ID;
 
 
 --SELECT *

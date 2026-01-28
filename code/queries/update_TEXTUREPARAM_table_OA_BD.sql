@@ -30,7 +30,7 @@ DROP TABLE textureparam_temp;
 
 */
 
-
+/*
 --Populate TEXTUREPARAM table with values for
 --building roof-surfaces:
 CREATE TEMPORARY TABLE textureparam_temp
@@ -125,7 +125,7 @@ FROM textureparam_temp;
 
 DROP TABLE textureparam_temp;
 
-
+*/
 
 
 --Match the SURFACE_DATA color to the SURFACE_GEOMETRY window
@@ -142,7 +142,9 @@ WHERE surface_geometry_id IN(
 	INNER JOIN sim_meta.geom_oa
 	ON CITYOBJECT.GMLID = sim_meta.geom_oa.cityObjectIdentifier
 	WHERE CITYOBJECT.OBJECTCLASS_ID = 38
-	AND SURFACE_GEOMETRY.GEOMETRY IS NULL AND sim_meta.geom_oa.Value IS NULL
+	AND SURFACE_GEOMETRY.GEOMETRY IS NULL AND 
+	sim_meta.geom_oa.Value IS NULL AND
+	sim_meta.geom_oa.simulationID = 'OA_malmo_bellevue_DpXXXXX_20230401_v1'
 );
 
 --Windows whose OA is < 5:
@@ -156,7 +158,9 @@ WHERE surface_geometry_id IN(
 	INNER JOIN sim_meta.geom_oa
 	ON CITYOBJECT.GMLID = sim_meta.geom_oa.cityObjectIdentifier
 	WHERE CITYOBJECT.OBJECTCLASS_ID = 38
-	AND SURFACE_GEOMETRY.GEOMETRY IS NULL AND sim_meta.geom_oa.Value < 5
+	AND SURFACE_GEOMETRY.GEOMETRY IS NULL 
+	AND sim_meta.geom_oa.Value < 5
+	AND	sim_meta.geom_oa.simulationID = 'OA_malmo_bellevue_DpXXXXX_20230401_v1'
 );
 
 --Windows whose sim output is: 5>= OA <10:
@@ -173,6 +177,7 @@ WHERE surface_geometry_id IN(
 	AND SURFACE_GEOMETRY.GEOMETRY IS NULL 
 	AND sim_meta.geom_oa.Value >= 5
 	AND sim_meta.geom_oa.Value < 10
+	AND	sim_meta.geom_oa.simulationID = 'OA_malmo_bellevue_DpXXXXX_20230401_v1'
 );
 
 
@@ -190,6 +195,7 @@ WHERE surface_geometry_id IN(
 	AND SURFACE_GEOMETRY.GEOMETRY IS NULL 
 	AND sim_meta.geom_oa.Value >= 10
 	AND sim_meta.geom_oa.Value < 20
+	AND	sim_meta.geom_oa.simulationID = 'OA_malmo_bellevue_DpXXXXX_20230401_v1'
 );
 
 
@@ -207,6 +213,7 @@ WHERE surface_geometry_id IN(
 	AND SURFACE_GEOMETRY.GEOMETRY IS NULL 
 	AND sim_meta.geom_oa.Value >= 20
 	AND sim_meta.geom_oa.Value < 30
+	AND	sim_meta.geom_oa.simulationID = 'OA_malmo_bellevue_DpXXXXX_20230401_v1'
 );
 
 
@@ -223,10 +230,11 @@ WHERE surface_geometry_id IN(
 	WHERE CITYOBJECT.OBJECTCLASS_ID = 38
 	AND SURFACE_GEOMETRY.GEOMETRY IS NULL 
 	AND sim_meta.geom_oa.Value >= 30
+	AND	sim_meta.geom_oa.simulationID = 'OA_malmo_bellevue_DpXXXXX_20230401_v1'
 );
 
 
-
+/*
 --Building roofs:
 UPDATE citydb.TEXTUREPARAM
 SET surface_data_id = 6
@@ -265,9 +273,10 @@ WHERE surface_geometry_id IN(
 	WHERE CITYOBJECT.OBJECTCLASS_ID = 35
 	
 
+
 );
 
-
+*/
 
 
 
